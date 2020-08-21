@@ -1,3 +1,12 @@
+// Github
+
+echo "# react-core-concept" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/mimnets/react-core-concept.git
+git push -u origin master
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -69,12 +78,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 # react-core-concept
 
 
-// Github
 
-echo "# react-core-concept" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/mimnets/react-core-concept.git
-git push -u origin master
                 

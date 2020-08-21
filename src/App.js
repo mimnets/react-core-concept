@@ -8,8 +8,17 @@ function App() {
   const products = [
     {name: 'Photoshop', price:'$90.99'},
     {name: 'Illustrator', price:'$99.99'},
-    {name: 'Adobe Acrobat', price:'$06.99'}
+    {name: 'Adobe Acrobat', price:'$06.99'},
+    {name: 'Adobe Primier Pro', price:'$26.99'}
   ]
+
+  // const productNames = products.map(product => product.name);
+  // const productNames = products.map(product => product); 
+  // console.log(productNames);
+  // const nayokNames = nayoks.map(nayok => nayok); 
+  // console.log(nayokNames);
+  const nayikasNames = nayikas.map(nayika => nayika); 
+  console.log(nayikasNames);
 
   var style = {
     color: 'red',
@@ -35,8 +44,23 @@ function App() {
   <h3 style={{color: 'gray',
     backgroundColor: 'cyan'}}>Singer: {person2.name + " " + person2.job}</h3>
         <p>My first react paragraph</p>
-        <Product product={products[0]}></Product>
-        <Product product={products[1]}></Product>
+        <ul>
+          {
+            nayoks.map(nayok => <li>{nayok}</li>)
+          } 
+          {
+            products.map(product => <li>{product.name} - {product.price}</li>)
+          }
+          {/* <li>{nayoks[0]}</li>
+          <li>{nayoks[1]}</li>
+          <li>{nayoks[2]}</li> */
+        }
+        </ul>
+        {
+          products.map(pd => <Product product={pd}></Product>)
+        }
+        {/* <Product product={products[0]}></Product>
+        <Product product={products[1]}></Product> */}
         <Person name={nayoks[0]} nayika={nayikas[4]}></Person>
         <Person name="Jashim" nayika="Shabana"></Person>
         <Person></Person>
