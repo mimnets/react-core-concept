@@ -3,6 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const nayoks = ['Anowar Khan', 'Jafor Iqbal', 'Alomgir', 'Salman Shah']
+  const nayikas = ['Moushumi', 'Shabana', 'Bobita', 'Diti', 'Anowara Begum']
+  const products = [
+    {name: 'Photoshop', price:'$90.99'},
+    {name: 'Illustrator', price:'$99.99'},
+    {name: 'Adobe Acrobat', price:'$06.99'}
+  ]
+
   var style = {
     color: 'red',
     backgroundColor: 'blue'
@@ -37,13 +45,6 @@ function App() {
   );
 }
 
-const products = [
-  {name: 'Photoshop', price:'$90.99'},
-  {name: 'Illustrator', price:'$99.99'},
-  {name: 'Adobe Acrobat', price:'$06.99'}
-]
-
-
 function Product(props){
   const productStyle = {
     border: '1px solid gray',
@@ -63,8 +64,7 @@ function Product(props){
   )
 }
 
-const nayoks = ['Anowar Khan', 'Jafor Iqbal', 'Alomgir', 'Salman Shah']
-const nayikas = ['Moushumi', 'Shabana', 'Bobita', 'Diti', 'Anowara Begum']
+
 function Person(props){
   const personStyle={
     border: '2px solid red', 
